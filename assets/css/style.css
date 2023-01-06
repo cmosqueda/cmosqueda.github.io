@@ -1,0 +1,78 @@
+/*Google fonts - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(../images/homepage.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0);
+	position: sticky;
+    top: 0;
+}
+
+img.logo {
+    width: 90px;
+    border-radius: 50%;
+	margin: 10px;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+}
+
+.active {
+	font-weight: bold;
+    border-radius: 30px;
+    color: #ffffff;
+	background-color: rgb(187, 115, 255);
+
+}
+
+nav ul li a:not(.active):hover {
+	font-weight: bold;
+	text-shadow: 0 0 3px rgb(211, 146, 255), 0 0 5px rgb(250, 59, 155);
+}
+
+.home-page {
+	text-align: center;
+	padding: 200px;
+}
+
+.home-page h1 {
+	color: white;
+	font-size: 45px;
+}
+
+.home-page p {
+	color: white;
+}
