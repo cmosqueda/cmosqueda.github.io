@@ -10,7 +10,7 @@
 .container {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 180vh;
 	margin: 0 auto;
 	background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(../images/homepage.jpeg);
     background-size: cover;
