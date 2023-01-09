@@ -68,7 +68,7 @@ section.homepage-section {
 
 .home-page {
 	text-align: center;
-	padding: 210px;
+	height: 100vh;
 }
 
 .home-page h1 {
@@ -99,12 +99,12 @@ section.homepage-section {
 section.quote-section {
 	background: rgb(23,22,61);
 	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
-	height: 15vh;
+	height: 10vh;
+	text-align: center;
+	padding-top: 45px;
 }
 
-.quote-section p {
-	text-align: center;
-	color: #ffffff;
-	padding: 35px;
+.quote-section a {
+	color: #ff69f8;
 	font-size: large;
 }
