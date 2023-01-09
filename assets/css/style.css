@@ -8,17 +8,13 @@
 }
 
 .container {
-	position: relative;
 	width: 100%;
-	height: 180vh;
 	margin: 0 auto;
-	background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(../images/homepage.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 header {
-	background-color: rgba(0, 0, 0, 0);
+	background: rgb(23,22,61);
+	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
 	position: sticky;
     top: 0;
 }
@@ -63,9 +59,16 @@ nav ul li a:not(.active):hover {
 	text-shadow: 0 0 3px rgb(211, 146, 255), 0 0 5px rgb(250, 59, 155);
 }
 
+section.homepage-section {
+	height: 100vh;
+	background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(../images/homepage-photo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .home-page {
 	text-align: center;
-	padding: 200px;
+	padding: 210px;
 }
 
 .home-page h1 {
@@ -75,4 +78,33 @@ nav ul li a:not(.active):hover {
 
 .home-page p {
 	color: white;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-evenly;
+    padding: 45px;
+	text-align: center;
+}
+
+.socials a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.socials a:hover {
+	color: #ff69f8
+}
+
+section.quote-section {
+	background: rgb(23,22,61);
+	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
+	height: 15vh;
+}
+
+.quote-section p {
+	text-align: center;
+	color: #ffffff;
+	padding: 35px;
+	font-size: large;
 }

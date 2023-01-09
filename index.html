@@ -12,8 +12,7 @@
     <!--FAVICON-->
     <link rel="icon" href="assets/images/favicon.png">
 
-    <!--BOXICON for icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <div class="container">
@@ -24,11 +23,11 @@
                 <img src="assets/images/cmlogo.png" alt="logo" class="logo">
 
                 <ul>
-                    <li><a class="active" href="#">Home</a></li> <!--ACTIVE-->
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a class="active" href="index.html">Home</a></li> <!--ACTIVE-->
+                    <li><a href="subpages/about.html">About Me</a></li>
+                    <li><a href="subpages/projects.html">Projects</a></li>
+                    <li><a href="subpages/skills.html">Skills</a></li>
+                    <li><a href="subpages/contact.html">Contact Me</a></li>
                 </ul>
             </nav>
     </header>
@@ -43,25 +42,35 @@
 
                 <!--FACEBOOOK-->
                 <a href="https://www.facebook.com/christine.mosqueda.395">
-                    <box-icon type='logo' name='facebook-circle'></box-icon>
+                    <ion-icon size="large" name="logo-facebook"></ion-icon>
+                    <p>Christine Mosqueda</p>
                 </a>
                 
                 <!--INSTAGRAM-->
                 <a href="https://www.instagram.com/kar2fl/?next=%2F">
-                    <box-icon type='logo' name='instagram-alt'></box-icon>
+                    <ion-icon size="large" name="logo-instagram"></ion-icon>
+                    <p>kar2fl</p>
                 </a>
-
+    
                 <!--GITHUB-->
                 <a href="https://github.com/cmosqueda">
-                    <box-icon name='github' type='logo' ></box-icon>
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <p>cmosqueda</p>
                 </a>
-
+    
             </div>
+
         </div>
+    </section>
+
+    <section class="quote-section">
+        <p>"Trust the process."</p>
     </section>
 
     </div>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!--IONIC ICONS JS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
