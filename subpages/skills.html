@@ -6,12 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christine Mosqueda - Skills</title>
 
+    <!-- SKILLS CSS -->
+    <link rel="stylesheet" href="../assets/css/skills.css">
+
+    <!--FAVICON-->
+    <link rel="icon" href="../assets/images/favicon.png">
+
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- HEROES CSS -->
+    <link rel="stylesheet" href="../assets/css/heroes.css">
+
+    <!-- FEATURES CSS -->
+    <link rel="stylesheet" href="../assets/css/features.css">
+
 </head>
 <body>
+
+            <!--Default header with navigation-->
+            <header>
+                <nav>
+                    <img src="../assets/images/cmlogo.png" alt="logo" class="logo">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../subpages/about.html">About Me</a></li>
+                        <li><a href="../subpages/artworks.html">Art Gallery</a></li>
+                        <li><a class="active" href="../subpages/skills.html">Skills</a></li> <!--ACTIVE-->
+                        <li><a href="../subpages/contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+
+
+        <main>
+
+                        <!-- BOOTSTRAP CENTERED HERO HTML TEMPLATE -->
+
+                        <div class="px-4 py-5 text-center" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); width: 100%; height: 100%; background-size: cover; background-repeat: no-repeat;">
+                            <!-- <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                            <h1 class="display-5 fw-bold" style="color: white;">My IT Skills</h1>
+                            <div class="col-lg-6 mx-auto">
+                              <p class="lead mb-4" style="color: white;">My heart swells for fine arts but we know how expensive that course is, so I just decided to go and pursue what I think is practical. Fortunately, I am somehow interested with technology and that's how I ended up taking BSIT <i>(and also because I was influenced by my father who's an IT graduate)</i>. As for my passion in art, it is still here and it will never go away. I will just incorporate it to creating projects involving multi-media.</p>
+                              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button> -->
+                                <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="b-example-divider"></div>
+            
+            
+            
+                          <!-- BOOTSTRAP FEATURES WITH TITLE HTML TEMPLATE -->
+            
+            
+                          <div class="b-example-divider" style="height: 3rem;"></div>
+            
+                          <div class="container px-4 py-5" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 30px;">
+                            <h2 class="pb-2 border-bottom">My Coding Skills</h2>
+                        
+                            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                              <div class="col d-flex flex-column align-items-start gap-2">
+                                <ion-icon size="large" name="laptop-outline"></ion-icon>
+                                <h3 class="fw-bold">Web Development</h3>
+                                <p class="text-muted">I started learning web development just last year, month of October. Admittedly, it was a struggle at first, especially with learning CSS, but I managed to do it.</p>
+                                <!-- <a href="#" class="btn btn-primary btn-lg">Primary button</a> -->
+                              </div>
+                        
+                              <div class="col">
+                                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                                  <div class="col d-flex flex-column gap-2">
+                                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                      <!-- <svg class="bi" width="1em" height="1em"> -->
+                                        <ion-icon name="logo-html5"></ion-icon>
+                                        <use xlink:href="#collection" />
+                                      </svg>
+                                    </div>
+                                    <h4 class="fw-semibold mb-0">HTML 5</h4>
+                                    <p class="text-muted"><b>6/10.</b> This is confusing but I know the basics and the logic of this framework.</p>
+                                </div>
+                        
+                                  <div class="col d-flex flex-column gap-2">
+                                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                      <!-- <svg class="bi" width="1em" height="1em"> -->
+                                        <ion-icon name="logo-css3"></ion-icon>
+                                        <use xlink:href="#gear-fill" />
+                                      </svg>
+                                    </div>
+                                    <h4 class="fw-semibold mb-0">CSS 3</h4>
+                                    <p class="text-muted"><b>7/10.</b> Very confusing at first, but I got used to it. Styling is fun.</p>
+                                  </div>
+                        
+                                  <div class="col d-flex flex-column gap-2">
+                                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                      <!-- <svg class="bi" width="1em" height="1em"> -->
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                        <use xlink:href="#speedometer" />
+                                      </svg>
+                                    </div>
+                                    <h4 class="fw-semibold mb-0">JavaScript</h4>
+                                    <p class="text-muted"><b>1/10.</b> I know it's purpose but I don't understand the syntax.</p>
+                                  </div>
+                        
+            
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+        </main>
+
+        <div class="divider" style="height: 3rem;"></div>
+
+        <section class="resume-section">
+            <button>
+                <a href="../assets/files/MOSQUEDA, Christine - RESUME.pdf">DOWNLOAD MY RESUME HERE!</a>
+            </button>
+        </section>
     
+
+        <!--IONIC ICONS JS-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

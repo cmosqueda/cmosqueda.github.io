@@ -6,15 +6,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christine Mosqueda - About Me</title>
 
+    <!--ABOUT CSS-->
+    <link rel="stylesheet" href="../assets/css/about.css">
+
+
+    <!-- CAROUSEL CSS -->
+    <link rel="stylesheet" href="../assets/css/carousel.css">
+
     <!--Bootstrap CSS-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+
+    <!--FAVICON-->
+    <link rel="icon" href="../assets/images/favicon.png">
+
 
 </head>
 <body>
+
+        <!--Default header with navigation-->
+        <header>
+          <nav>
+              <img src="../assets/images/cmlogo.png" alt="logo" class="logo">
+              <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a class="active" href="../subpages/about.html">About Me</a></li> <!--ACTIVE-->
+                  <li><a href="../subpages/artworks.html">Art Gallery</a></li>
+                  <li><a href="../subpages/skills.html">Skills</a></li>
+                  <li><a href="../subpages/contact.html">Contact Me</a></li>
+              </ul>
+          </nav>
+        </header>
+
+
+        <!-- BOOTSTRAP CAROUSEL MAIN HTML TEMPLATE -->
+        <main>
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                  <img src="https://images.pexels.com/photos/207529/pexels-photo-207529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="space" class="featured-img">
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Hi! I am Christine Mosqueda!</h1>
+                      <p>But you can just call me "Tine".</p>
+                      <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                  <img src="https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="glitters" class="featured-img">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>I am a 1st Year BSIT student.</h1>
+                      <p>I've always been fascinated with the trends of technology.</p>
+                      <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                  <img src="https://images.pexels.com/photos/3780104/pexels-photo-3780104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="abstract" class="featured-img">
+                  <div class="container">
+                    <div class="carousel-caption text-end">
+                      <h1>My main objective is to get rich.</h1>
+                      <p>I mean, who doesn't? Money is basically everything.</p>
+                      <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          
+          
+            <!-- Marketing messaging and featurettes
+            ================================================== -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+          
+            <div class="container marketing">
+          
+              <!-- Three columns of text below the carousel -->
+
+          
+              <!-- SOCIAL LINKS -->
+
+              <h3 style="text-align: center;">My social links</h3>
+
+              <div class="socials">
+
+
+                <!--FACEBOOOK-->
+                <a href="https://www.facebook.com/christine.mosqueda.395">
+                    <ion-icon size="large" name="logo-facebook"></ion-icon>
+                    <br>
+                    Christine Mosqueda
+                </a>
+                
+                <!--INSTAGRAM-->
+                <a href="https://www.instagram.com/kar2fl/?next=%2F">
+                    <ion-icon size="large" name="logo-instagram"></ion-icon>
+                    <br>
+                    kar2fl
+                </a>
     
+                <!--GITHUB-->
+                <a href="https://github.com/cmosqueda">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                    <br>
+                    cmosqueda
+                </a>
+
+                <!-- GMAIL -->
+                <a href="mailto:mosqueda.christinereisa04@gmail.com">
+                    <ion-icon size="large" name="mail"></ion-icon>
+                    <br>
+                    Christine Mosqueda
+                </a>
     
+            </div>
+
+          
+              <!-- START THE FEATURETTES -->
+
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1">This is me.<span class="text-muted"> I love how I look tall here lol</span></h2>
+                  <p class="lead">This photo was taken last year, 2022 when my family went shopping.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/profilephoto1.jpg" alt="my picture" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1">This is my family. <span class="text-muted"> I love them.</span></h2>
+                  <p class="lead">This picture of us is one of my highlights in 2022, and this was when we went out to dine at Limketkai Mang Inasal. I also played arcade there with my sister and we had fun.</p>
+                </div>
+                <div class="col-md-5">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/my-family.jpg" alt="my family" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1">These are my cousins.<span class="text-muted"> They're from my father's side.</span></h2>
+                  <p class="lead">This also happened last year when we went we attended a mass at the Cathedral Church.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/my-cousins.jpg" alt="my cousins" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1">This is a stray cat who stays at our area.<span class="text-muted"> We call her Meanie.</span></h2>
+                  <p class="lead">She has been staying with us for like, 4 years, I think? It only started when we gave her food on a chilly evening, and then she showed up the following day asking for food. From then on, we kept on feeding her and she never left our area. She even sleeps there, but unfortunately we cannot let her inside our house because my mother doesn't allow us to have pets.</p>
+                </div>
+                <div class="col-md-5">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/meanie.jpg" alt="meanie cat" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1">These are my friends.<span class="text-muted"> They're the best!</span></h2>
+                  <p class="lead"><i>From left to right: Ruben, Me, Monique, Hazel</i> <br>These were my classmates in Senior High School. Our friendship was rather unexpected, really. They're one of the best people I've ever met and befriended and I learned a lot from them. I've always been so grateful to them and I love them.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/tea-important.jpeg" alt="Tea Important" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1">An unforgettable beach trip.<span class="text-muted"> This was at Tubigan, Initao beach.</span></h2>
+                  <p class="lead">This was one of the best days  of my 2022! Hazel and her family invited us to her graduation celebration at Tubigan, Initao. This was basically the first beach outing that my mother allowed me to go.</p>
+                </div>
+                <div class="col-md-5">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/stemportin.jpeg" alt="STEM 14 at Tubigan, Initao" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1">These are my friends.<span class="text-muted"> They're the best!</span></h2>
+                  <p class="lead"><i>From left to right: Ruben, Me, Monique, Hazel</i> <br>These were my classmates in Senior High School. Our friendship was rather unexpected, really. They're one of the best people I've ever met and befriended and I learned a lot from them. I've always been so grateful to them and I love them.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/tea-important.jpeg" alt="Tea Important" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1">1R6 Year-end Party.<span class="text-muted"> First outing with my classmates!</span></h2>
+                  <p class="lead">Also one of the best days of my 2022 because this day was filled with laughter. I had so much fun with my classmates. I even get to know them more.</p>
+                </div>
+                <div class="col-md-5">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <img src="../assets/images/about-pics/1r6 year-end party.jpg" alt="1R6 Yera-end Party" style="max-width: 100%; height: auto;" class="featurette-pics">
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <!-- /END THE FEATURETTES -->
+          
+            </div><!-- /.container -->
+          
+          
+            <!-- RESUME SECTION - FOOTER NA DAPAT NI SIYA -->
+
+                <section class="resume-section">
+                    <button>
+                        <a href="../assets/files/MOSQUEDA, Christine - RESUME.pdf">DOWNLOAD MY RESUME HERE!</a>
+                    </button>
+                </section>
+
+          </main>
+          
+
+      <!--IONIC ICONS JS-->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!--Bootstrap JS-->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
 </body>
 </html>

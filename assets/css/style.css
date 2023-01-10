@@ -12,11 +12,11 @@
 	margin: 0 auto;
 }
 
+/*HEADER STYLE DEFAULT*/
+
 header {
 	background: rgb(23,22,61);
 	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
-	position: sticky;
-    top: 0;
 }
 
 img.logo {
@@ -59,6 +59,9 @@ nav ul li a:not(.active):hover {
 	text-shadow: 0 0 3px rgb(211, 146, 255), 0 0 5px rgb(250, 59, 155);
 }
 
+
+/* HOMEPAGE */
+
 section.homepage-section {
 	height: 100vh;
 	background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(../images/homepage-photo.jpg);
@@ -80,10 +83,13 @@ section.homepage-section {
 	color: white;
 }
 
+
+/* SOCIALS */
+
 .socials {
 	display: flex;
 	justify-content: space-evenly;
-    padding: 45px;
+    padding: 55px;
 	text-align: center;
 }
 
@@ -96,15 +102,32 @@ section.homepage-section {
 	color: #ff69f8;
 }
 
+
+/* RESUME SECTION */
+
 section.resume-section {
 	background: rgb(23,22,61);
 	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
-	height: 10vh;
+	height: 15vh;
 	text-align: center;
 	padding-top: 45px;
 }
 
 .resume-section a {
-	color: #ff69f8;
+	color: #ffffff;
 	font-size: large;
+	text-decoration: none;
+}
+
+.resume-section button {
+	padding: 10px;
+	border-radius: 30px;
+	background-color: rgb(187, 115, 255);
+	border-width: 0;
+}
+
+.resume-section button:hover {
+	box-shadow: 1px 7px 57px 0px rgba(233,146,255,0.66);
+	-webkit-box-shadow: 1px 7px 57px 0px rgba(233,146,255,0.66);
+	-moz-box-shadow: 1px 7px 57px 0px rgba(233,146,255,0.66);
 }

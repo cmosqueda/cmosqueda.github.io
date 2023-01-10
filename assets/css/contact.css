@@ -1,0 +1,171 @@
+/*Google fonts - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*HEADER STYLE DEFAULT*/
+
+header {
+	background: rgb(23,22,61);
+	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
+}
+
+img.logo {
+    width: 90px;
+    border-radius: 50%;
+	margin: 10px;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+}
+
+.active {
+	font-weight: bold;
+    border-radius: 30px;
+    color: #ffffff;
+	background-color: rgb(187, 115, 255);
+
+}
+
+nav ul li a:not(.active):hover {
+	font-weight: bold;
+	text-shadow: 0 0 3px rgb(211, 146, 255), 0 0 5px rgb(250, 59, 155);
+}
+
+
+/* CONTACT MAIN CONTENT */
+
+section.contact-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 16, 34, 0.5),rgba(18, 12, 99, 0.5)), url(../images/spiral.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.divider {
+    height: 3rem;
+}
+
+.contact-container h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: xx-large;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+	text-align: center;
+}
+
+
+
+
+.column {
+    float: left;
+    width: 18%;
+    padding: 0 10px;
+  }
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .card {
+    border-radius: 30px;
+    padding: 50px 10px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #edb6d6 0%, #af78de 50%, #134b73 100%);
+    box-shadow: 10px 10px 44px -9px rgba(141, 141, 141, 0.75);
+    -webkit-box-shadow: 10px 10px 44px -9px rgba(155, 155, 155, 0.75);
+    -moz-box-shadow: 10px 10px 44px -9px rgba(126, 126, 126, 0.75);
+
+  }
+
+
+.icons {
+    font-size: 80px;
+}
+
+
+.clickers {
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+}
+
+.clickers a {
+    text-decoration: none;
+    padding: 9px;
+    font-size: 13px;
+    color: white;
+}
+
+.clickers:hover {
+    background-color: #ff69f8;;
+}
+
+
+/* RESUME SECTION */
+
+section.resume-section {
+	background: rgb(23,22,61);
+	background: linear-gradient(90deg, rgba(23,22,61,1) 8%, rgba(42,40,105,1) 36%, rgba(113,110,196,1) 100%);
+	height: 15vh;
+	text-align: center;
+	padding-top: 45px;
+}
+
+.resume-section a {
+	color: #ffffff;
+	font-size: large;
+	text-decoration: none;
+}
+
+.resume-section button {
+	padding: 10px;
+	border-radius: 30px;
+	background-color: rgb(187, 115, 255);
+	border-width: 0;
+}
+
+.resume-section button:hover {
+	box-shadow: 1px 7px 57px 0px rgba(233,146,255,0.66);
+	-webkit-box-shadow: 1px 7px 57px 0px rgba(233,146,255,0.66);
+	-moz-box-shadow: 1px 7px 57px 0px rgba(233,146,255,0.66);
+}
