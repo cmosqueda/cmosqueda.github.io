@@ -359,7 +359,7 @@ main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
   }
 
   main #aboutSection .aboutWrapper .introWrapper {
-    margin: 45px;
+    margin-left: 45px;
     /* display: block; */
   }
 }
