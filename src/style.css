@@ -125,7 +125,7 @@ main #heroSection {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 13vh;
 }
 
 main #heroSection .infoWrapper {
@@ -302,6 +302,7 @@ main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20vh;
   }
 
   main #heroSection #heroImg {
