@@ -29,9 +29,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   height: 50px;
+  z-index: 1000;
 }
 header a {
   text-decoration: none;
@@ -47,6 +49,7 @@ header a#logo {
   margin-left: 50px;
 }
 header .navigation {
+  /* z-index: 1000; */
   position: absolute;
   top: 100%;
   right: 2%;
@@ -101,7 +104,7 @@ header .rightNav .menuIcon {
 
 /* main contents */
 main {
-  /* position: static; */
+  position: static;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,6 +113,7 @@ main {
 
 /* apply margin and width to all sections mobile-first */
 main section {
+  /* position: relative; */
   margin: 50px 0;
   width: 70%;
 }
@@ -121,6 +125,7 @@ main #heroSection {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20vh;
 }
 
 main #heroSection .infoWrapper {
@@ -259,7 +264,7 @@ main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
 /* for tablet size and above */
 @media (min-width: 768px) {
   header .navigation {
-    position: relative;
+    position: static;
     display: flex;
     flex-direction: row;
     justify-content: center;
