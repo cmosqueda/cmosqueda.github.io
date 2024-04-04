@@ -125,7 +125,7 @@ main #heroSection {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 13vh;
+  margin-top: 10vh;
 }
 
 main #heroSection .infoWrapper {
