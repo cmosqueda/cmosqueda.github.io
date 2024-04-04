@@ -76,8 +76,7 @@ header .navigation a {
   color: black;
   margin: 20px;
 }
-header .navigation a:hover {
-}
+
 header .rightNav {
   display: flex;
   justify-content: center;
@@ -102,7 +101,7 @@ header .rightNav .menuIcon {
 
 /* main contents */
 main {
-  position: static;
+  /* position: static; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +114,7 @@ main section {
   width: 70%;
 }
 
-/* hero section */
+/* #hero section */
 
 main #heroSection {
   display: flex;
@@ -166,6 +165,97 @@ main #heroSection .infoWrapper .socialsWrapper a p {
   display: none;
 }
 
+/* #about section */
+
+main #aboutSection {
+  color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* apply to all h1 elements inside about section */
+main #aboutSection h1 {
+  font-size: xx-large;
+  margin: 20px 0;
+}
+
+/* #about section - aboutWrapper */
+main #aboutSection .aboutWrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #aboutSection .aboutWrapper video {
+  width: 100%;
+}
+
+main #aboutSection .aboutWrapper .introWrapper {
+  margin: 20px 0;
+  display: block;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  justify-items: start; */
+}
+
+main #aboutSection .aboutWrapper .introWrapper #introParagraph {
+  margin-bottom: 30px;
+}
+
+main #aboutSection .aboutWrapper .introWrapper #readMore,
+#readLess {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.705);
+  /* text-decoration: underline; */
+  background-color: transparent;
+}
+
+main #aboutSection .aboutWrapper .introWrapper #readLess {
+  /* text-decoration: underline; */
+  display: none;
+}
+
+main #aboutSection .aboutWrapper .introWrapper #moreContent {
+  display: none;
+}
+
+main #aboutSection .aboutWrapper .introWrapper #viewResume {
+  margin: 20px 0;
+  background-color: var(--color-accent);
+  padding: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
+main #aboutSection .aboutWrapper .introWrapper #viewResume:hover {
+  background-color: rgb(61, 126, 255);
+  color: var(--color-accent);
+}
+
+/* #aboutSection - skillsWrapper */
+
+/* main #aboutSection .skillsWrapper .iconSkillsWrapper {
+} */
+
+main #aboutSection .skillsWrapper .iconSkillsWrapper svg {
+  width: 4rem;
+  height: auto;
+}
+
+main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+}
+
 /* for tablet size and above */
 @media (min-width: 768px) {
   header .navigation {
@@ -198,7 +288,7 @@ main #heroSection .infoWrapper .socialsWrapper a p {
 
   /* apply margin and with to all sections inside main content */
   main section {
-    margin: 100px 0;
+    margin: 70px 0;
     width: 80%;
   }
 
@@ -245,5 +335,25 @@ main #heroSection .infoWrapper .socialsWrapper a p {
   main #heroSection .infoWrapper .socialsWrapper a p {
     display: contents;
     padding-left: 5px;
+  }
+
+  /* about section */
+
+  main #aboutSection .aboutWrapper video {
+    width: 40%;
+    /* position: static; */
+  }
+
+  main #aboutSection .aboutWrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main #aboutSection .aboutWrapper .introWrapper {
+    margin: 45px;
+    /* display: block; */
   }
 }
