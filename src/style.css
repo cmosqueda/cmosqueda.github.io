@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-accent: white;
   --blue-hover: rgb(61, 126, 255);
@@ -357,7 +361,6 @@ main #projectsSection .projectsCompilation .projectsContainer a {
 
 main #projectsSection .projectsCompilation .projectsContainer a:hover {
   transform: translateY(-10px);
-  /* translate: all 0.3s; */
   transition: all 0.3s;
 }
 
@@ -373,6 +376,115 @@ main #projectsSection .projectsCompilation .projectsContainer a .project-info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+/* art gallery section */
+
+/* @keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-500%);
+  }
+} */
+
+main #artGallerySection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-accent);
+  /* align-items: center; */
+}
+
+main #artGallerySection h1 {
+  font-size: xx-large;
+}
+
+main #artGallerySection p {
+  font-style: italic;
+}
+
+main #artGallerySection .artworksWrapper {
+  overflow-x: auto;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+main #artGallerySection .artworksWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+main #artGallerySection .artworksWrapper img {
+  height: 350px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+/* contacts section */
+main #contactSection {
+  padding: 30px;
+  border-radius: 15px;
+  color: var(--color-accent);
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+main #contactSection .contactsWrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+main #contactSection .contactsWrapper .contacts-info {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* color: var(--color-accent); */
+}
+
+main #contactSection .contactsWrapper .contacts-info a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: small;
+  margin: 0 15px;
+}
+
+main #contactSection .contactsWrapper .contacts-info a:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  color: var(--blue-hover);
+}
+
+main #contactSection .contactsWrapper .contacts-info p {
+  display: none;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  height: 50px;
+  color: var(--color-accent);
+  font-size: small;
 }
 
 /* for tablet size and above */
@@ -481,4 +593,43 @@ main #projectsSection .projectsCompilation .projectsContainer a .project-info {
   /* main #projectsSection {
     width: 90%;
   } */
+
+  /* art gallery section */
+  main #artGallerySection .artworksWrapper img {
+    height: 400px;
+  }
+
+  /* contacts section */
+
+  main #contactSection .contactsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  main #contactSection .contactsWrapper .contacts-info a i {
+    margin-right: 15px;
+  }
+
+  main #contactSection .contactsWrapper .contacts-info p {
+    display: contents;
+  }
+
+  main #contactSection .contactsWrapper .contacts-info {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* margin-right: 20px; */
+    /* color: var(--color-accent); */
+  }
+
+  main #contactSection .contactsWrapper .contacts-info a {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+  }
 }
