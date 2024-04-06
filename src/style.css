@@ -1,6 +1,6 @@
 :root {
   --color-accent: white;
-  --neon-base: rgb(122, 204, 255);
+  --blue-hover: rgb(61, 126, 255);
   --font: "Poppins", sans-serif;
 }
 
@@ -57,7 +57,7 @@ header .navigation {
   padding: 10px 0;
 
   width: 150px;
-  height: 280px;
+  height: auto;
 
   /* hide if not toggled, go to js */
   display: none;
@@ -78,6 +78,10 @@ header .navigation a {
   /* transition: all 0.5s ease; */
   color: black;
   margin: 20px;
+}
+
+header .navigation a:hover {
+  color: var(--blue-hover);
 }
 
 header .rightNav {
@@ -164,6 +168,10 @@ main #heroSection .infoWrapper .socialsWrapper {
 main #heroSection .infoWrapper .socialsWrapper a {
   color: var(--color-accent);
   margin-right: 20px;
+}
+
+main #heroSection .infoWrapper .socialsWrapper a:hover {
+  color: var(--blue-hover);
 }
 
 main #heroSection .infoWrapper .socialsWrapper a p {
@@ -259,6 +267,112 @@ main #aboutSection .skillsWrapper .iconSkillsWrapper svg {
 main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
   transform: translateY(-10px);
   transition: all 0.3s;
+}
+
+/* #projects section */
+
+main #projectsSection {
+  margin: 20vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+main #projectsSection h1 {
+  color: var(--color-accent);
+  font-size: xx-large;
+}
+
+main #projectsSection .projectsCompilation {
+  margin: 2vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main #projectsSection .projectsCompilation .projectsButtons {
+  margin: 10px 0;
+  /* width: 100%; */
+}
+
+main #projectsSection .projectsCompilation .projectsButtons button {
+  padding: 5px;
+  font-size: large;
+  margin: 5px 0;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+/* main #projectsSection .projectsCompilation .projectsButtons button:hover {
+  background-color: var(--blue-hover);
+  color: var(--color-accent);
+} */
+
+main #projectsSection .projectsCompilation .projectsButtons #p-allProjects {
+  background-color: black;
+  color: var(--color-accent);
+}
+
+/* main #projectsSection .projectsCompilation .projectsButtons #p-allProjects:hover {
+  background-color: var(--blue-hover);
+  color: var(--color-accent);
+} */
+
+/* main #projectsSection .projectsCompilation .projectsButtons button:active {
+  background-color: black;
+  color: var(--color-accent);
+} */
+
+main #projectsSection .projectsCompilation .projectsContainer {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+main #projectsSection .projectsCompilation .projectsContainer a {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: small; */
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+
+  border-radius: 10px;
+  text-decoration: none;
+  /* flex-direction: row; */
+}
+
+main #projectsSection .projectsCompilation .projectsContainer a:hover {
+  transform: translateY(-10px);
+  /* translate: all 0.3s; */
+  transition: all 0.3s;
+}
+
+main #projectsSection .projectsCompilation .projectsContainer a img {
+  width: 90px;
+  border-radius: 8px;
+}
+
+main #projectsSection .projectsCompilation .projectsContainer a .project-info {
+  font-size: small;
+  color: var(--color-accent);
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* for tablet size and above */
@@ -362,4 +476,9 @@ main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
     margin-left: 45px;
     /* display: block; */
   }
+
+  /* projects section */
+  /* main #projectsSection {
+    width: 90%;
+  } */
 }
