@@ -442,6 +442,8 @@ main #contactSection {
 }
 
 main #contactSection .contactsWrapper {
+  width: 100%;
+  /* height: 100%; */
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: column;
@@ -461,7 +463,7 @@ main #contactSection .contactsWrapper .contacts-info a {
   color: var(--color-accent);
   text-decoration: none;
   font-size: small;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 main #contactSection .contactsWrapper .contacts-info a:hover {
@@ -631,5 +633,10 @@ footer {
     margin: 15px 0;
     display: flex;
     align-items: center;
+  }
+
+  main #contactSection .contactsWrapper iframe {
+    width: 400px;
+    height: 250px;
   }
 }
