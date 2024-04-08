@@ -263,14 +263,79 @@ main #aboutSection .aboutWrapper .introWrapper #viewResume:hover {
 /* main #aboutSection .skillsWrapper .iconSkillsWrapper {
 } */
 
-main #aboutSection .skillsWrapper .iconSkillsWrapper svg {
+main #aboutSection .stackWrapper .iconStackWrapper svg {
   width: 4rem;
   height: auto;
 }
 
-main #aboutSection .skillsWrapper .iconSkillsWrapper svg:hover {
+main #aboutSection .stackWrapper .iconStackWrapper svg:hover {
   transform: translateY(-10px);
   transition: all 0.3s;
+}
+
+/* skills wrapper */
+main #aboutSection .skillsWrapper {
+  margin: 20px 0;
+  /* background-color: aquamarine; */
+  width: 100%;
+}
+
+main #aboutSection .skillsWrapper h1 {
+  font-size: xx-large;
+  text-align: start;
+}
+
+main #aboutSection .skillsWrapper .skillsBarContainer {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main #aboutSection .skillsWrapper .skillsBarContainer .skill {
+  width: 95%;
+  /* background-color: aqua; */
+  margin: 20px 0;
+}
+
+main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar {
+  margin: 10px 0;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.183);
+  border-radius: 30px;
+}
+
+/* main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar:hover {
+  bor
+} */
+
+main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar #programming-perc {
+  width: 67%;
+  background-color: rgb(80, 182, 255);
+  height: 100%;
+  border-radius: 30px;
+}
+
+main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar #problem_solving-perc {
+  width: 79%;
+  background-color: rgb(80, 182, 255);
+  height: 100%;
+  border-radius: 30px;
+}
+
+main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar #creativity-perc {
+  width: 79%;
+  background-color: rgb(80, 182, 255);
+  height: 100%;
+  border-radius: 30px;
+}
+
+main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar #interpersonal-perc {
+  width: 60%;
+  background-color: rgb(80, 182, 255);
+  height: 100%;
+  border-radius: 30px;
 }
 
 /* #projects section */
@@ -589,6 +654,19 @@ footer {
   main #aboutSection .aboutWrapper .introWrapper {
     margin-left: 45px;
     /* display: block; */
+  }
+
+  main #aboutSection .skillsWrapper {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main #aboutSection .skillsWrapper .skillsBarContainer {
+    width: 100%;
   }
 
   /* projects section */
