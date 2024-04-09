@@ -409,7 +409,7 @@ main #projectsSection .projectsCompilation .projectsContainer a {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   /* font-size: small; */
   margin: 10px;
@@ -587,7 +587,7 @@ footer {
   /* apply margin and with to all sections inside main content */
   main section {
     margin: 70px 0;
-    width: 80%;
+    width: 85%;
   }
 
   main #heroSection {
