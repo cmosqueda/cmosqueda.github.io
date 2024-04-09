@@ -38,21 +38,27 @@ function seeMore() {
 
 // projects button
 let allProjBtn = document.getElementById("p-allProjects");
-let javaBtn = document.getElementById("p-java");
-let pythonBtn = document.getElementById("p-python");
-let figmaBtn = document.getElementById("p-figma");
+// let javaBtn = document.getElementById("p-java");
+// let pythonBtn = document.getElementById("p-python");
+// let figmaBtn = document.getElementById("p-figma");
+
+let windowsAppBtn = document.getElementById("p-windowsApps");
+let mockupsBtn = document.getElementById("p-mockups");
 let webappBtn = document.getElementById("p-webapp");
 
 // projects container a classes
-let javaProjs = document.getElementsByClassName("java-app");
-let pythonProjs = document.getElementsByClassName("python-app");
-let figmaProjs = document.getElementsByClassName("figma-design");
+// let javaProjs = document.getElementsByClassName("java-app");
+// let pythonProjs = document.getElementsByClassName("python-app");
+// let figmaProjs = document.getElementsByClassName("figma-design");
+
+let windowsProjs = document.getElementsByClassName("windows-app");
+let mockupsProjs = document.getElementsByClassName("mockups-design");
 let webappProjs = document.getElementsByClassName("web-app");
 
 function displayProject(p) {
   if (p == "all") {
     // undo button styles
-    let otherBtns = [pythonBtn, figmaBtn, allProjBtn, webappBtn, javaBtn];
+    let otherBtns = [allProjBtn, windowsAppBtn, mockupsBtn, webappBtn];
 
     for (let btns of otherBtns) {
       btns.style.backgroundColor = "";
@@ -61,15 +67,11 @@ function displayProject(p) {
 
     // undo projects display
 
-    for (let projects of javaProjs) {
+    for (let projects of windowsProjs) {
       projects.style.display = "";
     }
 
-    for (let projects of pythonProjs) {
-      projects.style.display = "";
-    }
-
-    for (let projects of figmaProjs) {
+    for (let projects of mockupsProjs) {
       projects.style.display = "";
     }
 
@@ -78,9 +80,9 @@ function displayProject(p) {
     }
 
     // diri ko ni stop
-  } else if (p == "java") {
+  } else if (p == "windows") {
     // undo button styles
-    let otherBtns = [pythonBtn, figmaBtn, allProjBtn, webappBtn];
+    let otherBtns = [allProjBtn, mockupsBtn, webappBtn];
 
     for (let btns of otherBtns) {
       btns.style.backgroundColor = "";
@@ -91,28 +93,24 @@ function displayProject(p) {
     allProjBtn.style.backgroundColor = "var(--color-accent)";
 
     // apply button style to java button only
-    javaBtn.style.color = "var(--color-accent)";
-    javaBtn.style.background = "black";
+    windowsAppBtn.style.color = "var(--color-accent)";
+    windowsAppBtn.style.background = "black";
 
-    for (let projects of javaProjs) {
+    for (let projects of windowsProjs) {
       projects.style.display = "";
     }
 
     // hide other projects
-    for (let projects of pythonProjs) {
-      projects.style.display = "none";
-    }
-
-    for (let projects of figmaProjs) {
+    for (let projects of mockupsProjs) {
       projects.style.display = "none";
     }
 
     for (let projects of webappProjs) {
       projects.style.display = "none";
     }
-  } else if (p == "python") {
+  } else if (p == "mockups") {
     // undo button styles
-    let otherBtns = [figmaBtn, javaBtn, allProjBtn, webappBtn];
+    let otherBtns = [windowsAppBtn, allProjBtn, webappBtn];
 
     for (let btns of otherBtns) {
       btns.style.backgroundColor = "";
@@ -122,48 +120,14 @@ function displayProject(p) {
     allProjBtn.style.color = "black";
     allProjBtn.style.backgroundColor = "var(--color-accent)";
 
-    pythonBtn.style.color = "var(--color-accent)";
-    pythonBtn.style.background = "black";
+    mockupsBtn.style.color = "var(--color-accent)";
+    mockupsBtn.style.background = "black";
 
-    for (let projects of javaProjs) {
+    for (let projects of windowsProjs) {
       projects.style.display = "none";
     }
 
-    for (let projects of pythonProjs) {
-      projects.style.display = "";
-    }
-
-    for (let projects of figmaProjs) {
-      projects.style.display = "none";
-    }
-
-    for (let projects of webappProjs) {
-      projects.style.display = "none";
-    }
-  } else if (p == "figma") {
-    // undo button styles
-    let otherBtns = [pythonBtn, javaBtn, allProjBtn, webappBtn];
-
-    for (let btns of otherBtns) {
-      btns.style.backgroundColor = "";
-      btns.style.color = "";
-    }
-
-    allProjBtn.style.color = "black";
-    allProjBtn.style.backgroundColor = "var(--color-accent)";
-
-    figmaBtn.style.color = "var(--color-accent)";
-    figmaBtn.style.background = "black";
-
-    for (let projects of javaProjs) {
-      projects.style.display = "none";
-    }
-
-    for (let projects of pythonProjs) {
-      projects.style.display = "none";
-    }
-
-    for (let projects of figmaProjs) {
+    for (let projects of mockupsProjs) {
       projects.style.display = "";
     }
 
@@ -172,7 +136,7 @@ function displayProject(p) {
     }
   } else if (p == "webapp") {
     // undo button styles
-    let otherBtns = [figmaBtn, javaBtn, allProjBtn, pythonBtn];
+    let otherBtns = [mockupsBtn, windowsAppBtn, allProjBtn];
 
     for (let btns of otherBtns) {
       btns.style.backgroundColor = "";
@@ -185,15 +149,11 @@ function displayProject(p) {
     webappBtn.style.color = "var(--color-accent)";
     webappBtn.style.background = "black";
 
-    for (let projects of javaProjs) {
+    for (let projects of windowsProjs) {
       projects.style.display = "none";
     }
 
-    for (let projects of pythonProjs) {
-      projects.style.display = "none";
-    }
-
-    for (let projects of figmaProjs) {
+    for (let projects of mockupsProjs) {
       projects.style.display = "none";
     }
 

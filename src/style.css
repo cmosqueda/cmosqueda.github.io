@@ -341,7 +341,7 @@ main #aboutSection .skillsWrapper .skillsBarContainer .skill .bar #interpersonal
 /* #projects section */
 
 main #projectsSection {
-  margin: 20vh 0;
+  margin: 10vh 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
