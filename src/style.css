@@ -587,7 +587,7 @@ footer {
   /* apply margin and with to all sections inside main content */
   main section {
     margin: 70px 0;
-    width: 85%;
+    width: 80%;
   }
 
   main #heroSection {
