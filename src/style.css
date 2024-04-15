@@ -471,11 +471,6 @@ main #artGallerySection .artworksWrapper .artworksSlide {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  animation: scroll 60s alternate infinite;
-}
-
-main #artGallerySection .artworksWrapper .artworksSlide:hover {
-  animation-play-state: paused;
 }
 
 main #artGallerySection .artworksWrapper::-webkit-scrollbar {
@@ -486,16 +481,6 @@ main #artGallerySection .artworksWrapper .artworksSlide img {
   height: 350px;
   margin: 0 10px;
   border-radius: 10px;
-}
-
-/* keyframes scroll */
-@keyframes scroll {
-  /* 0% {
-    transform: translateX(0);
-  } */
-  to {
-    transform: translateX(-1850%);
-  }
 }
 
 /* contacts section */
@@ -684,6 +669,25 @@ footer {
   } */
 
   /* art gallery section */
+
+  /* keyframes scroll */
+  @keyframes scroll {
+    /* 0% {
+    transform: translateX(0);
+  } */
+    to {
+      transform: translateX(-1850%);
+    }
+  }
+
+  main #artGallerySection .artworksWrapper .artworksSlide {
+    animation: scroll 60s alternate infinite;
+  }
+
+  main #artGallerySection .artworksWrapper .artworksSlide:hover {
+    animation-play-state: paused;
+  }
+
   main #artGallerySection .artworksWrapper .artworksSlide img {
     height: 400px;
   }
