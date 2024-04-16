@@ -474,7 +474,22 @@ main #artGallerySection .artworksWrapper .artworksSlide {
 }
 
 main #artGallerySection .artworksWrapper::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  height: 8px;
+}
+
+main #artGallerySection .artworksWrapper::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+main #artGallerySection .artworksWrapper::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+  border-radius: 10px;
+}
+
+main #artGallerySection .artworksWrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
 }
 
 main #artGallerySection .artworksWrapper .artworksSlide img {
@@ -676,12 +691,12 @@ footer {
     transform: translateX(0);
   } */
     to {
-      transform: translateX(-1850%);
+      transform: translateX(-1800%);
     }
   }
 
   main #artGallerySection .artworksWrapper .artworksSlide {
-    animation: scroll 60s alternate infinite;
+    animation: scroll 50s linear infinite;
   }
 
   main #artGallerySection .artworksWrapper .artworksSlide:hover {
