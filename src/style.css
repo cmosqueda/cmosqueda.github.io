@@ -526,8 +526,8 @@ main #contactSection .contactsWrapper .contacts-info a {
 }
 
 main #contactSection .contactsWrapper .contacts-info a:hover {
-  transform: translateY(-10px);
-  transition: all 0.3s;
+  /* transform: translateY(-10px);
+  transition: all 0.3s; */
   color: var(--blue-hover);
 }
 
