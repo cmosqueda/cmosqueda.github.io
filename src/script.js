@@ -163,10 +163,10 @@ function displayProject(p) {
   }
 }
 
-window.addEventListener("resize", (e) => {
-  if (window.innerWidth >= 768) {
-    document.getElementById("artGallery-p").textContent = "Hover to pause auto-scroll.";
-  } else {
-    document.getElementById("artGallery-p").textContent = "Hover to pause auto-scroll.";
-  }
-});
+// window.addEventListener("resize", (e) => {
+//   if (window.innerWidth >= 768) {
+//     document.getElementById("artGallery-p").textContent = "Hover to pause auto-scroll.";
+//   } else {
+//     document.getElementById("artGallery-p").textContent = "Hover to pause auto-scroll.";
+//   }
+// });
