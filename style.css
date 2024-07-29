@@ -1,0 +1,396 @@
+/* mobile orientation */
+
+:root {
+  font-family: "Poppins", sans-serif;
+  --honeydew: #f3fcf0;
+  --black-olive: #1f271b;
+  --beige: #e3e7d3;
+  --tickle-me-pink: #f88dad;
+  --lavender-blush: #f9e9ec;
+  --licorice: #22181c;
+  --bright-pink: #ef626c;
+  --french-rose: #f44174;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--licorice);
+}
+
+/* header */
+header {
+  background-color: var(--tickle-me-pink);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border: 1px solid black;
+}
+
+.topnav-desktop {
+  display: none;
+}
+
+/* initial state = none */
+.topnav-mobile {
+  /* display: none; */
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  top: -100%;
+  transition: all 0.3s;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.text-logo {
+  font-weight: bold;
+  padding: 0 0 0 10px;
+}
+
+.text-logo a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  text-shadow: 2px 2px 8px var(--french-rose);
+}
+
+.text-logo,
+.topnav-desktop,
+#topnav-toggle {
+  margin: 15px;
+}
+
+.topnav-desktop a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: var(--licorice);
+}
+
+.topnav-mobile a {
+  text-decoration: none;
+  color: var(--licorice);
+  font-size: large;
+  padding: 15px;
+  /* width: 100%; */
+  /* margin: 15px; */
+}
+
+#topnav-toggle {
+  background-color: transparent;
+  border: 0;
+  transition: all 0.3s;
+}
+
+#menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* body */
+body {
+  background-color: var(--lavender-blush);
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* landing sec */
+#landing-section {
+  display: flex;
+  /* background-color: aquamarine; */
+  justify-content: center;
+  align-items: start;
+  padding-top: 25%;
+  flex-direction: column;
+  width: 70%;
+}
+
+.landing-section-text {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-section-text h1 {
+  font-size: 50px;
+  color: var(--french-rose);
+  transition: all 0.3s;
+}
+
+.landing-section-text p {
+  font-size: 15px;
+  font-style: italic;
+  transition: all 0.3s;
+}
+
+.socmed-links {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+
+.socmed-links a {
+  text-decoration: none;
+}
+
+.socmed-icons {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+/* profile sec */
+#profile-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80%;
+}
+
+.card-container {
+  width: 300px;
+  position: relative;
+  /* bottom: 100%; */
+  /* background-color: yellow; */
+}
+
+.id-card {
+  position: absolute;
+  /* background-color: green; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+
+  /* margin: 10%; */
+}
+
+.id-card.active {
+  transform: rotateY(180deg);
+}
+
+.card-front-facing {
+  position: absolute;
+  background-color: white;
+  /* padding: 40px; */
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* scale: 0.6; */
+  transition: all 0.3s;
+  /* width: 240px; */
+  width: 100%;
+  height: 450px;
+  backface-visibility: hidden;
+}
+
+.photo-barcode {
+  margin-right: 0;
+}
+
+#potenz-id-photo {
+  width: 100px;
+  border: 2px solid black;
+  transition: all 0.3s;
+}
+
+#potenz-barcode img {
+  width: 100px;
+  transition: all 0.3s;
+}
+
+.id-header-and-text-info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+#potenz-id-header {
+  width: 150px;
+  align-self: center;
+  transition: all 0.3s;
+}
+
+#id-hr-line {
+  border-top: dashed 2px var(--licorice);
+}
+
+.id-text-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.info {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.info-label {
+  font-size: small;
+}
+
+.info-value {
+  font-weight: 600;
+}
+
+#potenz-portfolio p {
+  font-size: x-small;
+  text-align: center;
+}
+
+#potenz-portfolio p a {
+  text-decoration: none;
+  color: var(--french-rose);
+  /* z-index: 20; */
+}
+
+.card-back-facing {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--french-rose);
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 450px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+/* .card-back-facing::after {
+  transform: rotateY(180deg);
+} */
+
+.card-back-facing p {
+  font-size: x-large;
+  text-align: center;
+  margin: 20px;
+  color: var(--lavender-blush);
+}
+
+#flip-card-click-front p {
+  text-align: center;
+  margin: 5px;
+  font-size: x-small;
+  /* font-weight: bold; */
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--french-rose);
+}
+
+#flip-card-click-front p:hover,
+#flip-card-click-back p:hover {
+  cursor: pointer;
+}
+
+#flip-card-click-back p {
+  text-align: center;
+  margin-top: 60px;
+  font-size: small;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* desktop orientation */
+
+@media (min-width: 768px) {
+  .topnav-desktop {
+    display: flex;
+  }
+
+  #topnav-toggle {
+    display: none;
+  }
+
+  .topnav-mobile {
+    display: none;
+  }
+
+  #landing-section {
+    padding: 10%;
+    align-items: center;
+  }
+
+  .landing-section-text {
+    text-align: center;
+  }
+
+  .landing-section-text h1 {
+    font-size: 90px;
+  }
+
+  .landing-section-text p {
+    font-size: 20px;
+  }
+
+  .socmed-icons {
+    width: 30px;
+    height: 30px;
+    margin: 30px 20px;
+  }
+
+  #profile-section {
+    margin: 30%;
+  }
+
+  /* id card */
+
+  .card-container {
+    width: 700px;
+  }
+
+  .card-front-facing {
+    flex-direction: row;
+    height: 400px;
+  }
+
+  .photo-barcode {
+    margin-right: 50px;
+  }
+
+  #potenz-id-photo {
+    width: 200px;
+  }
+
+  #potenz-barcode img {
+    width: 200px;
+  }
+
+  #potenz-id-header {
+    width: 300px;
+  }
+
+  .card-back-facing {
+    height: 400px;
+  }
+}
