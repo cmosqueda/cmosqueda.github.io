@@ -115,9 +115,10 @@ main {
   /* background-color: aquamarine; */
   justify-content: center;
   align-items: start;
-  padding-top: 25%;
+  /* padding-top: 25%; */
   flex-direction: column;
-  width: 70%;
+  /* width: 70%; */
+  height: 550px;
 }
 
 .landing-section-text {
@@ -159,11 +160,12 @@ main {
 /* profile sec */
 #profile-section {
   width: 100%;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 80%;
+  /* margin: 10%; */
 }
 
 .card-container {
@@ -210,6 +212,10 @@ main {
 
 .photo-barcode {
   margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #potenz-id-photo {
@@ -304,7 +310,7 @@ main {
   font-size: x-small;
   /* font-weight: bold; */
   font-style: italic;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: var(--french-rose);
 }
 
@@ -318,7 +324,7 @@ main {
   margin-top: 60px;
   font-size: small;
   font-style: italic;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* desktop orientation */
@@ -337,7 +343,7 @@ main {
   }
 
   #landing-section {
-    padding: 10%;
+    /* padding: 10%; */
     align-items: center;
   }
 
@@ -359,9 +365,9 @@ main {
     margin: 30px 20px;
   }
 
-  #profile-section {
+  /* #profile-section {
     margin: 30%;
-  }
+  } */
 
   /* id card */
 
