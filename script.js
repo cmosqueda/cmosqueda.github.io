@@ -96,11 +96,11 @@ flipCardsClick.forEach((clickArea) => {
   clickArea.addEventListener("click", () => {
     if (isIdCardFlipped === false) {
       // idCard.style.transform = "rotateY(180deg)";
-      idCard.classList.toggle("active");
+      idCard.classList.toggle("active-card-flip");
       isIdCardFlipped = true;
     } else {
       // cardBack.style.transform = "rotateY(180deg)";
-      idCard.classList.toggle("active");
+      idCard.classList.toggle("active-card-flip");
       isIdCardFlipped = false;
     }
   });

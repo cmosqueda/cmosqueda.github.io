@@ -10,6 +10,7 @@
   --licorice: #22181c;
   --bright-pink: #ef626c;
   --french-rose: #f44174;
+  --pink: #ffc4d1;
   scroll-behavior: smooth;
 }
 
@@ -188,7 +189,7 @@ main {
   /* margin: 10%; */
 }
 
-.id-card.active {
+.id-card.active-card-flip {
   transform: rotateY(180deg);
 }
 
@@ -326,6 +327,110 @@ main {
   font-size: small;
   font-style: italic;
   /* text-decoration: underline; */
+}
+
+/* projects section */
+#projects-section {
+  height: 550px;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  width: 80%;
+  height: 80%;
+  background-color: var(--pink);
+  border-radius: 5px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projects-h1 {
+  color: var(--licorice);
+  text-transform: uppercase;
+  /* text-shadow: 2px 2px 8px var(--french-rose); */
+}
+
+.projects-slider-container {
+  width: 100%;
+  height: 80%;
+  /* background-color: yellow; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.projects-slider-container::-webkit-scrollbar {
+  height: 10px;
+  /* background-color: var(--lavender-blush); */
+}
+
+.projects-slider-container::-webkit-scrollbar-track {
+  background-color: var(--lavender-blush);
+}
+
+.projects-slider-container::-webkit-scrollbar-thumb {
+  background-color: var(--tickle-me-pink);
+}
+
+.projects-slider-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--french-rose);
+}
+
+.projects-card-container {
+  width: 270px;
+  height: 100%;
+  background-color: white;
+  margin: 0 10px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.projects-card-container img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+}
+
+.projects-card-details {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-card-h2 {
+  margin: 8px 0;
+}
+
+.projects-card-h2 a {
+  text-decoration: none;
+  color: var(--licorice);
+  transition: all 0.3s;
+}
+
+.projects-card-h2 a:hover {
+  color: var(--tickle-me-pink);
+}
+
+.projects-card-p {
+  font-size: x-small;
+  width: 80%;
+  font-style: italic;
 }
 
 /* desktop orientation */
