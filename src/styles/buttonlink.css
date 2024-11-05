@@ -1,0 +1,40 @@
+:root {
+  /* colors */
+  --l-primary-color: #efefef;
+  --l-secondary-color: #1d1d1d;
+  --accent-color: #5055ff;
+  --d-primary-color: #272730;
+  --d-secondary-color: #efefef;
+}
+
+.buttonlink {
+  background-color: var(--accent-color);
+  display: flex;
+  padding: 5px;
+  border-radius: 30px;
+  border: 0;
+  transition: all 0.5s;
+  margin: 5px;
+}
+
+.buttonlinktext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--l-primary-color);
+}
+
+.buttonlinktext p {
+  margin: 0 10px;
+}
+
+.buttonlink:hover {
+  background-color: var(--l-secondary-color);
+}
+
+.buttonlinktext:hover {
+  color: var(--l-primary-color);
+}

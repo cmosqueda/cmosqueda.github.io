@@ -1,0 +1,17 @@
+:root {
+  /* colors */
+  --l-primary-color: #efefef;
+  --l-secondary-color: #1d1d1d;
+  --accent-color: #5055ff;
+  --d-primary-color: #272730;
+  --d-secondary-color: #efefef;
+}
+
+.footercontainer {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  background: rgba(255, 255, 255, 0); /* White with 20% opacity */
+  backdrop-filter: blur(10px); /* Adjust for more or less blur */
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}

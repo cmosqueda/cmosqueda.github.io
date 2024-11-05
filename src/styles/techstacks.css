@@ -1,0 +1,39 @@
+:root {
+  /* colors */
+  --l-primary-color: #efefef;
+  --l-secondary-color: #1d1d1d;
+  --accent-color: #5055ff;
+  --d-primary-color: #272730;
+  --d-secondary-color: #efefef;
+
+  --width: 100px;
+  --height: 50px;
+  --quantity: 15;
+}
+
+.slider {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.slider-item {
+  margin: 0 3px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.slider-item:hover {
+  transform: translateY(-10px);
+}
