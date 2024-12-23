@@ -596,16 +596,16 @@ video {
   top: 0px;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .m-1 {
   margin: 0.25rem;
 }
 
 .m-3 {
   margin: 0.75rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .mx-0 {
@@ -759,6 +759,10 @@ video {
   justify-content: space-between;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -835,8 +839,16 @@ video {
   text-align: right;
 }
 
-.font-helvetica {
-  font-family: helvetica, arial, sans-serif;
+.font-robotomono {
+  font-family: Roboto Mono, arial, sans-serif;
+}
+
+.font-inter {
+  font-family: Inter, arial, sans-serif;
+}
+
+.font-roboto {
+  font-family: Roboto, arial, sans-serif;
 }
 
 .text-3xl {
