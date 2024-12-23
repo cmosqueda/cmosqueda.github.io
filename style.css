@@ -839,16 +839,8 @@ video {
   text-align: right;
 }
 
-.font-robotomono {
+.font-robotoMono {
   font-family: Roboto Mono, arial, sans-serif;
-}
-
-.font-inter {
-  font-family: Inter, arial, sans-serif;
-}
-
-.font-roboto {
-  font-family: Roboto, arial, sans-serif;
 }
 
 .text-3xl {
