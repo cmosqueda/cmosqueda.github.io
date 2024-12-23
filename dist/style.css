@@ -843,6 +843,14 @@ video {
   font-family: Roboto Mono, arial, sans-serif;
 }
 
+.font-inter {
+  font-family: Inter, arial, sans-serif;
+}
+
+.font-poppins {
+  font-family: Poppins, arial, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
