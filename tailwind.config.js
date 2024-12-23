@@ -8,7 +8,7 @@ module.exports = {
         inter: ["Inter", "arial", "sans-serif"],
         poppins: ["Poppins", "arial", "sans-serif"],
         roboto: ["Roboto", "arial", "sans-serif"],
-        robotomono: ["Roboto Mono", "arial", "sans-serif"],
+        robotoMono: ["Roboto Mono", "arial", "sans-serif"],
       },
     },
   },
