@@ -10,6 +10,10 @@ module.exports = {
         roboto: ["Roboto", "arial", "sans-serif"],
         robotoMono: ["Roboto Mono", "arial", "sans-serif"],
       },
+      // gridTemplateColumns: {
+      //   "auto-fit": "repeat(auto-fit, minmax(100px, 1fr))",
+      //   "auto-fill": "repeat(auto-fill, minmax(100px, 1fr))",
+      // },
     },
   },
   plugins: [],
