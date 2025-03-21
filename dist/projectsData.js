@@ -57,6 +57,13 @@ export var projectsData = [
     description: "A simple currency converter made for practicing API calls, developed using Expo React Native.",
     link: "https://github.com/cmosqueda/currency-converter-repo",
   },
+  {
+    // sudoku react game
+    logoSrc: "./assets/project_logos/sudoku_icon.png",
+    projectName: "Sudoku Game",
+    description: "A simple Sudoku game developed using Expo React Native as frontend.",
+    link: "https://github.com/cmosqueda/sudoku-react",
+  },
 ];
 
 const projectsWrapper = document.getElementById("projectswrapperid");
