@@ -63,6 +63,7 @@ export var projectsData = [
     projectName: "Sudoku Game",
     description: "A simple Sudoku game developed using Expo React Native as frontend.",
     link: "https://github.com/cmosqueda/sudoku-react",
+    // added
   },
 ];
 
