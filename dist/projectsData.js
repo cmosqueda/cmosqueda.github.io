@@ -60,10 +60,9 @@ export var projectsData = [
   {
     // sudoku react game
     logoSrc: "./assets/project_logos/sudoku_icon.png",
-    projectName: "Sudoku Game",
+    projectName: "Sudoku Game - Expo React Native",
     description: "A simple Sudoku game developed using Expo React Native as frontend.",
     link: "https://github.com/cmosqueda/sudoku-react",
-    // added
   },
 ];
 
