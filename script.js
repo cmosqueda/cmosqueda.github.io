@@ -1,3 +1,5 @@
+// for smooth scroll
+
 window.addEventListener("scroll", () => {
   const header = document.getElementById("header");
   if (window.scrollY > 50) {
@@ -8,3 +10,5 @@ window.addEventListener("scroll", () => {
     header.classList.remove("shadow-md");
   }
 });
+
+// for projects
