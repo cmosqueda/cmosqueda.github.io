@@ -1,5 +1,5 @@
 /**
- * @var {Array} projectsData - contains json data of projects.
+ * @var {Array} projectsData - contains jsonified data of projects.
  *
  */
 
@@ -8,7 +8,8 @@ export var projectsData = [
     // java udbms
     logoSrc: "./assets/project_logos/java_ustp_dmbs_logo.png",
     projectName: "Java UDBMS",
-    description: "A simple GUI standalone database system using text file handling developed with windowbuilder.",
+    description:
+      "A simple GUI standalone student and instructor database management system using text file handling, developed with java windowbuilder, a drag-and-drop GUI designer.",
     link: "https://github.com/cmosqueda/group6_ustpdbms",
   },
   {
@@ -48,6 +49,13 @@ export var projectsData = [
     description:
       "A proposed study helper app developed using Expo React Native as frontend and Firebase as a serverless backend and database.",
     link: "https://github.com/cmosqueda/moongle-buddy-app-gh",
+  },
+  {
+    // currency converter
+    logoSrc: "",
+    projectName: "Currency Converter App",
+    description: "A simple currency converter made for practicing API calls, developed using Expo React Native.",
+    link: "https://github.com/cmosqueda/currency-converter-repo",
   },
 ];
 
