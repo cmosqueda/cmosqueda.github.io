@@ -6,7 +6,7 @@
 export var projectsData = [
   {
     // java udbms
-    logoSrc: "./assets/project_logos/java_ustp_dmbs_logo.png",
+    logoSrc: "./assets/favicon.png",
     projectName: "Java UDBMS",
     description:
       "A simple GUI standalone student and instructor database management system using text file handling, developed with java windowbuilder, a drag-and-drop GUI designer.",
@@ -47,12 +47,12 @@ export var projectsData = [
     logoSrc: "./assets/project_logos/moongle_icon.png",
     projectName: "MOONGLE Buddy",
     description:
-      "A proposed study helper app developed using Expo React Native as frontend and Firebase as a serverless backend and database.",
+      "A proposed study helper app developed using Expo React Native as frontend and Firebase as a serverless backend and database. (Collaborative work with S.N.Tilan, J.Baraocor, L.C.Flores)",
     link: "https://github.com/cmosqueda/moongle-buddy-app-gh",
   },
   {
     // currency converter
-    logoSrc: "",
+    logoSrc: "./assets/favicon.png",
     projectName: "Currency Converter App",
     description: "A simple currency converter made for practicing API calls, developed using Expo React Native.",
     link: "https://github.com/cmosqueda/currency-converter-repo",
@@ -63,6 +63,12 @@ export var projectsData = [
     projectName: "Sudoku Game - Expo React Native",
     description: "A simple Sudoku game developed using Expo React Native as frontend.",
     link: "https://github.com/cmosqueda/sudoku-react",
+  },
+  {
+    logoSrc: "./assets/favicon.png",
+    projectName: "Affitnity",
+    description: "A working, full-stack web prototype for a fitness app using React, Django, and PostgreSQL. (WIP)",
+    link: "https://github.com/cmosqueda/affitnity-react",
   },
 ];
 
@@ -75,18 +81,19 @@ function renderProjects() {
     const projectLink = document.createElement("a");
     projectLink.href = project.link;
     projectLink.className =
-      "text-neutral-50 flex flex-row items-center border rounded-lg p-3 transition-all hover:shadow-lg w-full ";
+      "text-neutral-50 flex flex-col flex-grow items-center text-center border rounded-2xl p-4 bg-neutral-900 shadow-md hover:shadow-xl transition-all w-[260px] h-auto justify-center";
     projectLink.target = "_blank"; // Open in new tab
+    projectLink.classList.add("cursor-pointer");
 
     // Create image element
     const img = document.createElement("img");
     img.src = project.logoSrc;
     img.alt = project.projectName;
-    img.className = "object-cover w-12 h-12 sm:w-20 sm:h-20 rounded-sm transition-all";
+    img.className = "object-cover w-20 h-20 rounded-md transition-all";
 
     // Create details container
     const detailsDiv = document.createElement("div");
-    detailsDiv.className = "ml-3";
+    detailsDiv.className = "ml-3 mt-3";
 
     // Project title
     const title = document.createElement("p");
@@ -95,7 +102,7 @@ function renderProjects() {
 
     // Project description
     const description = document.createElement("p");
-    description.className = "text-xs sm:text-sm";
+    description.className = "text-xs sm:text-sm   ";
     description.textContent = project.description;
 
     // Append elements
