@@ -81,7 +81,7 @@ function renderProjects() {
     const projectLink = document.createElement("a");
     projectLink.href = project.link;
     projectLink.className =
-      "text-neutral-50 flex flex-col flex-grow items-center text-center border rounded-2xl p-4 bg-neutral-900 shadow-md hover:shadow-xl transition-all w-[260px] h-auto justify-center";
+      "text-neutral-50 flex flex-col flex-grow items-center text-center border rounded-lg p-4 bg-neutral-900 hover:bg-neutral-200 hover:text-neutral-900 hover:shadow-xl transition-all w-[260px] h-auto justify-center";
     projectLink.target = "_blank"; // Open in new tab
     projectLink.classList.add("cursor-pointer");
 
