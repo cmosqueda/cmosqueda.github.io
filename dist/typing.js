@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "bombardini crocodili ",
     "potini vedridini ",
     "boom shakalaka ",
-    "sobrang latina ",
+    "can we pretend that airplanes in the nightsky are like shooting stars ",
+    "hur hur hur hur hur ",
+    "omsim barabida omsim barabida",
   ];
 
   let currentPhrase = 0;

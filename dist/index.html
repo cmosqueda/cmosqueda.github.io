@@ -37,6 +37,31 @@
       .typing {
         animation: typing 3.5s steps(30, end) forwards, blink 0.75s step-end infinite;
       }
+
+      /* flip */
+      .perspective {
+        perspective: 1000px;
+      }
+      .flip-inner {
+        transform-style: preserve-3d;
+        position: relative;
+      }
+      .flipped {
+        transform: rotateY(180deg);
+      }
+      .flip-front,
+      .flip-back {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      .flip-back {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     </style>
   </head>
 
@@ -46,13 +71,13 @@
       <!-- Dynamic Typing Text -->
       <p
         id="typewriter"
-        class="text-6xl text-neutral-50 absolute bottom-32 left-10 after:content-['|'] after:ml-1 after:animate-pulse"
+        class="text-6xl font-bold text-neutral-50 absolute bottom-32 left-10 after:content-['|'] after:ml-1 after:animate-pulse"
       ></p>
 
       <!-- socials -->
       <header
         id="header"
-        class="m-5 p-2 bg-white/30 backdrop-blur-md border border-white/20 shadow-lg text-neutral-50 flex flex-col sm:flex-row justify-between text-xs sm:text-base fixed w-[fill-available] top-0 transition-all duration-300 rounded-3xl"
+        class="m-5 p-2 z-10 bg-white/30 backdrop-blur-md border border-white/20 shadow-lg text-neutral-50 flex flex-col sm:flex-row justify-between text-xs sm:text-base fixed w-[fill-available] top-0 transition-all duration-300 rounded-3xl"
       >
         <!-- email -->
         <a
@@ -124,67 +149,83 @@
 
     <!-- id -->
     <section>
-      <div class="flex flex-col w-full items-center bg-neutral-600">
-        <!-- id container -->
-        <div
-          class="flex flex-col sm:flex-row items-center justify-center my-14 sm:my-20 w-4/5 bg-neutral-800 rounded-md"
-        >
-          <!-- photo and barcode -->
-          <div class="flex flex-col mt-10 sm:my-10">
-            <img src="./assets/myface.jpg" alt="myface" class="object-cover w-32 h-32 sm:w-40 sm:h-40" />
-            <img
-              class="w-32 sm:w-40 object-cover my-3"
-              alt="Barcode Generator TEC-IT"
-              src="https://barcode.tec-it.com/barcode.ashx?data=tyne&code=Code128&translate-esc=on&color=fafafa&bgcolor=262626"
-            />
-          </div>
+      <div class="flex flex-col w-full items-center my-10">
+        <p class="text-3xl font-bold text-neutral-100 mb-10">TYNE'S ID</p>
 
-          <!-- deets -->
-          <div class="flex flex-col w-4/5 sm:w-2/5 sm:ml-5 mx-0 my-3 text-neutral-50">
-            <hr class="border border-neutral-50 border-dashed" />
-            <hr class="border border-neutral-50 border-dashed mt-1" />
-
-            <!-- details cont -->
-            <div class="flex flex-row w-full justify-between my-3">
-              <!-- name and school -->
-              <div class="flex flex-col">
-                <!-- name -->
-                <div class="flex flex-col">
-                  <p>NAME</p>
-                  <p class="font-bold">TYNE</p>
-                </div>
-                <!-- school -->
-                <div class="flex flex-col my-2">
-                  <p>SCHOOL</p>
-                  <p class="font-bold">USTP</p>
-                </div>
+        <!-- flip container -->
+        <div id="flip-card" class="cursor-pointer perspective sm:w-4/6 w-5/6 transition-all">
+          <div
+            id="flip-inner"
+            class="flip-inner shadow-lg ring-1 ring-neutral-300 flex flex-col sm:flex-row items-center justify-center bg-neutral-100 transition-all duration-700 rounded-md"
+          >
+            <!-- Front side -->
+            <div class="flip-front flex flex-col sm:flex-row items-center justify-center w-full backface-hidden">
+              <!-- photo and barcode -->
+              <div class="flex flex-col mt-10 sm:my-10">
+                <img src="./assets/myface.jpg" alt="myface" class="object-cover w-32 h-32 sm:w-40 sm:h-40" />
+                <img
+                  class="w-32 sm:w-40 object-cover my-3"
+                  alt="Barcode Generator TEC-IT"
+                  src="https://barcode.tec-it.com/barcode.ashx?data=tyne&translate-esc=on&color=0a0a0a&bgcolor=f5f5f5"
+                />
               </div>
 
-              <!-- bday and program -->
-              <div class="flex flex-col">
-                <!-- bday -->
-                <div class="flex flex-col">
-                  <p>BIRTH DATE</p>
-                  <p class="font-bold">06.04.200X</p>
+              <!-- deets -->
+              <div class="flex flex-col w-4/5 sm:w-2/5 sm:ml-5 mx-0 my-3 text-neutral-950 text-sm">
+                <img src="./assets/clickCard.png" alt="clickCard" />
+                <!-- <hr class="border border-neutral-950 border-dashed" />
+                <hr class="border border-neutral-950 border-dashed mt-1" /> -->
+
+                <!-- details cont -->
+                <div class="flex flex-row w-full justify-between my-3">
+                  <!-- name and school -->
+                  <div class="flex flex-col">
+                    <!-- name -->
+                    <div class="flex flex-col">
+                      <p>NAME</p>
+                      <p class="font-bold">TYNE</p>
+                    </div>
+                    <!-- school -->
+                    <div class="flex flex-col my-2">
+                      <p>SCHOOL</p>
+                      <p class="font-bold">USTP</p>
+                    </div>
+                  </div>
+
+                  <!-- bday and program -->
+                  <div class="flex flex-col">
+                    <!-- bday -->
+                    <div class="flex flex-col">
+                      <p>BIRTH DATE</p>
+                      <p class="font-bold">06.04.200X</p>
+                    </div>
+
+                    <!-- program -->
+                    <div class="flex flex-col my-2">
+                      <p>PROGRAM</p>
+                      <p class="font-bold">BSIT</p>
+                    </div>
+                  </div>
                 </div>
 
-                <!-- program -->
-                <div class="flex flex-col my-2">
-                  <p>PROGRAM</p>
-                  <p class="font-bold">BSIT</p>
+                <hr class="border border-neutral-950 border-dashed" />
+                <hr class="border border-neutral-950 border-dashed mt-1" />
+
+                <!-- about -->
+                <div class="my-3 flex flex-col">
+                  <p class="text-justify italic text-xs">
+                    I sit in the grayscale of everything—the quiet space between black and white, where nuance lives and
+                    extremes fade.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <hr class="border border-neutral-50 border-dashed" />
-            <hr class="border border-neutral-50 border-dashed mt-1" />
-
-            <!-- about -->
-            <div class="my-3 flex flex-col">
-              <p class="text-sm text-justify italic">
-                I sit in the grayscale of everything—the quiet space between black and white, where nuance lives and
-                extremes fade.
-              </p>
+            <!-- Back side -->
+            <div
+              class="flip-back flex items-center justify-center w-full h-full absolute inset-0 bg-neutral-900 text-neutral-50 text-2xl font-semibold backface-hidden rotate-y-180 rounded-md"
+            >
+              <p id="back-text" class="m-10 text-center">BACK OF ID</p>
             </div>
           </div>
         </div>
@@ -203,7 +244,7 @@
           >
             <p class="text-3xl font-bold">ABOUT</p>
             <div class="w-0.5 h-28 m-3 sm:m-5 bg-neutral-50 hidden sm:flex"></div>
-            <p class="mt-3 sm:mx-0 text-sm text-justify">
+            <p class="mt-3 sm:mx-0 text-xs text-justify">
               More than an art and tech enthusiast, I see myself as a quiet observer of life—a believer that art and
               technology are simply our ways of understanding and sustaining the human experience. We create because we
               consume, but we also create to make meaning, to leave traces of ourselves behind. In my work, I try to
@@ -1128,7 +1169,7 @@
             <!-- projects wrapper -->
             <div
               id="projectswrapperid"
-              class="flex flex-wrap gap-4 justify-center p-4 max-w-7xl mx-auto hide-scrollbar overflow-y-auto"
+              class="flex flex-wrap gap-3 justify-center p-4 max-w-7xl mx-auto hide-scrollbar overflow-y-auto"
             >
               <!-- project boilerplates here, wrapped in a href tag -->
             </div>
@@ -1272,5 +1313,8 @@
     <script type="module" src="./projectsData.js"></script>
     <!-- dynamic typing effect -->
     <script type="module" src="./typing.js"></script>
+
+    <!-- dynamic flip -->
+    <script type="module" src="./flipIdCard.js"></script>
   </body>
 </html>
