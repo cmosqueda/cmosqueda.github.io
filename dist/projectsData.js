@@ -35,6 +35,14 @@ export var projectsData = [
     link: "https://www.figma.com/proto/mfrYEEvKEqFmlEj4IBabNb/R6---Mosqueda%2C-Christine-Reisa-P.-%7C-Finals-PIT?node-id=2-2&scaling=scale-down-width",
   },
   {
+    // Trail.lib
+    logoSrc: "./assets/favicon.png",
+    projectName: "Trail.lib",
+    description:
+      "Figma prototype of a “what-if” idea for our campus’s library. This simple solution is designed for browsing library catalogs, book detail viewing, and for monitoring transactions and activities of library members.",
+    link: "https://www.figma.com/design/LU6EGSGaYpanF0OPb4X8Gu/Mosqueda_3R8_MidtermLab?node-id=0-1&t=rgeR93h1iyCOQBmw-1",
+  },
+  {
     // interture
     logoSrc: "./assets/project_logos/interture_icon.png",
     projectName: "InterTure",
