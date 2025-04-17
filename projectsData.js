@@ -72,8 +72,8 @@ export var projectsData = [
   },
   {
     logoSrc: "./assets/favicon.png",
-    projectName: "Rock Paper Scissors CLI Game (Windows .exe)",
-    description: "This is a retro-style game written in Python, packaged as an .exe for Windows.",
+    projectName: "Rock Paper Scissors CLI (Windows .exe)",
+    description: "A retro-style CLI-based game written in Python, packaged as an .exe for Windows.",
     link: "https://github.com/cmosqueda/rock-paper-scissors-cli",
   },
 ];
