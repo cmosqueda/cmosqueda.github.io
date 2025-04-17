@@ -70,6 +70,12 @@ export var projectsData = [
     description: "A working, full-stack web prototype for a fitness app using React, Django, and PostgreSQL. (WIP)",
     link: "https://github.com/cmosqueda/affitnity-react",
   },
+  {
+    logoSrc: "./assets/favicon.png",
+    projectName: "Rock Paper Scissors CLI Game (Windows .exe)",
+    description: "This is a retro-style game written in Python, packaged as an .exe for Windows.",
+    link: "https://github.com/cmosqueda/rock-paper-scissors-cli",
+  },
 ];
 
 const projectsWrapper = document.getElementById("projectswrapperid");
