@@ -790,6 +790,10 @@ video {
   height: fit-content;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-0\.5 {
   width: 0.125rem;
 }
@@ -838,6 +842,10 @@ video {
 
 .w-\[260px\] {
   width: 260px;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-7xl {
