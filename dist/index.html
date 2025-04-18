@@ -69,32 +69,28 @@
   </head>
 
   <body class="font-robotoMono bg-neutral-800">
+    <!-- splash -->
+    <div
+      id="splash"
+      class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-opacity duration-700"
+    >
+      <img src="./assets/favicon.png" alt="favicon" class="w-20 h-20 animate-pulse rounded-md" />
+    </div>
+
     <!-- GO TO TOP BUTTON -->
     <button
       id="goTopBtn"
       onclick="goToTop()"
-      class="fixed bottom-5 text-xl right-5 z-50 bg-neutral-800 border border-white/20 shadow-lg hover:bg-neutral-500 text-white px-4 py-2 rounded-md opacity-0 pointer-events-none transition-all duration-300"
+      class="fixed bottom-5 text-xl right-5 z-20 bg-neutral-800 border border-white/20 shadow-lg hover:bg-neutral-500 text-white px-4 py-2 rounded-md opacity-0 pointer-events-none transition-all duration-300"
     >
       ↑
     </button>
 
     <section class="relative overflow-hidden">
+      <!-- banner -->
       <div
         class="bg-[url('./assets/aespa_whiplash_1.gif')] bg-cover bg-center bg-fixed h-screen flex items-center justify-center transition-all"
       ></div>
-
-      <!-- KARINA UP SOLO MV -->
-      <!-- <iframe
-        class="w-screen h-screen"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/K7qryogPQes?si=6RvrkSLzQBqeXVBg&amp;start=30"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe> -->
 
       <!-- Dynamic Typing Text -->
       <div class="absolute top-0 w-full h-full bg-black/50 text-neutral-50">
@@ -108,7 +104,7 @@
         </p>
       </div>
 
-      <!-- socials -->
+      <!-- email and linkedin, header -->
       <header
         id="header"
         class="m-5 p-2 z-10 bg-white/30 backdrop-blur-md border border-white/20 shadow-lg text-neutral-50 flex flex-col sm:flex-row justify-between text-xs sm:text-base fixed w-[fill-available] top-0 transition-all duration-300 rounded-3xl"
@@ -196,7 +192,11 @@
             <div class="flip-front flex flex-col sm:flex-row items-center justify-center w-full backface-hidden">
               <!-- photo and barcode -->
               <div class="flex flex-col mt-10 sm:my-10">
-                <img src="./assets/myface.jpg" alt="myface" class="object-cover w-32 h-32 sm:w-40 sm:h-40" />
+                <img
+                  src="./assets/myface.jpg"
+                  alt="myface"
+                  class="object-cover w-32 h-32 sm:w-40 sm:h-40 border border-neutral-900 rounded-sm"
+                />
                 <img
                   class="w-32 sm:w-40 object-cover my-3"
                   alt="Barcode Generator TEC-IT"
@@ -295,7 +295,7 @@
           <div class="flex flex-col items-center my-5 py-3 text-neutral-50">
             <p class="text-3xl mx-3 font-bold">STACKS</p>
             <!-- stack container, outer layout -->
-            <div class="my-5 mx-3 text-sm">
+            <div class="my-5 mx-3 text-xs">
               <div class="flex flex-wrap gap-2 items-center justify-center">
                 <!-- html -->
                 <div
@@ -1344,6 +1344,8 @@
     </footer>
 
     <!-- script modules -->
+    <!-- splash screen -->
+    <script type="module" src="./splash.js"></script>
     <script type="module" src="./script.js"></script>
     <script type="module" src="./projectsData.js"></script>
     <!-- dynamic typing effect -->
