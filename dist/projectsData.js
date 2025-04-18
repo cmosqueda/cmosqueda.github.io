@@ -95,7 +95,7 @@ function renderProjects() {
     const projectLink = document.createElement("a");
     projectLink.href = project.link;
     projectLink.className =
-      "text-neutral-50 flex flex-row sm:flex-col flex-grow items-center sm:text-center text-start border rounded-lg p-5 bg-neutral-900 hover:bg-neutral-200 hover:text-neutral-900 hover:shadow-xl transition-all w-auto sm:w-[260px] h-auto  ";
+      " text-neutral-50 flex flex-col flex-grow items-center text-center border rounded-lg p-5 bg-neutral-900 hover:bg-neutral-200 hover:text-neutral-900 hover:shadow-xl transition-all w-auto sm:w-[260px] h-auto  ";
     projectLink.target = "_blank"; // Open in new tab
     projectLink.classList.add("cursor-pointer");
 
@@ -107,7 +107,7 @@ function renderProjects() {
 
     // Create details container
     const detailsDiv = document.createElement("div");
-    detailsDiv.className = "ml-4 sm:ml-0 sm:mt-3 mt-0";
+    detailsDiv.className = " mt-3";
 
     // Project title
     const title = document.createElement("p");
