@@ -17,6 +17,9 @@
       rel="stylesheet"
     />
 
+    <!-- Locomotive Scroll CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" /> -->
+
     <!-- typing animation -->
     <style>
       @keyframes typing {
@@ -66,6 +69,15 @@
   </head>
 
   <body class="font-robotoMono bg-neutral-800">
+    <!-- GO TO TOP BUTTON -->
+    <button
+      id="goTopBtn"
+      onclick="goToTop()"
+      class="fixed bottom-5 text-xl right-5 z-50 bg-neutral-800 border border-white/20 shadow-lg hover:bg-neutral-500 text-white px-4 py-2 rounded-md opacity-0 pointer-events-none transition-all duration-300"
+    >
+      ↑
+    </button>
+
     <section class="relative overflow-hidden">
       <img class="object-cover h-[600px] w-full" src="./assets/giphy.gif" alt="giffy" />
       <!-- Dynamic Typing Text -->
@@ -153,7 +165,7 @@
         <p class="text-3xl font-bold text-neutral-100 mb-10">TYNE'S ID</p>
 
         <!-- flip container -->
-        <div id="flip-card" class="cursor-pointer perspective sm:w-4/6 w-5/6 transition-all">
+        <div id="flip-card" class="cursor-pointer perspective md:w-3/6 w-5/6 transition-all">
           <div
             id="flip-inner"
             class="flip-inner shadow-lg ring-1 ring-neutral-300 flex flex-col sm:flex-row items-center justify-center bg-neutral-100 transition-all duration-700 rounded-md"
@@ -213,9 +225,9 @@
 
                 <!-- about -->
                 <div class="my-3 flex flex-col">
-                  <p class="text-justify italic text-xs">
-                    I sit in the grayscale of everything—the quiet space between black and white, where nuance lives and
-                    extremes fade.
+                  <p class="text-center italic text-xs">
+                    I drift along the gray tides—the conflicting space between muted black and blaring white, where
+                    nuance lives and extremes subside.
                   </p>
                 </div>
               </div>
@@ -242,17 +254,17 @@
           <div
             class="flex flex-col sm:flex-row py-5 text-neutral-50 items-center mx-3 sm:mx-10 text-center sm:text-start"
           >
-            <p class="text-3xl font-bold">ABOUT</p>
-            <div class="w-0.5 h-28 m-3 sm:m-5 bg-neutral-50 hidden sm:flex"></div>
+            <p class="text-3xl font-bold text-end">ABOUT TYNE</p>
+            <div class="m-3 sm:m-5 bg-neutral-50 hidden sm:flex"></div>
             <p class="mt-3 sm:mx-0 text-xs text-justify">
               More than an art and tech enthusiast, I see myself as a quiet observer of life—a believer that art and
               technology are simply our ways of understanding and sustaining the human experience. We create because we
-              consume, but we also create to make meaning, to leave traces of ourselves behind. In my work, I try to
-              find balance between creativity and structure, letting logic ground me while imagination keeps me curious.
-              Lately, I’ve been navigating the paths of project management, full-stack development (with a deep pull
-              toward the frontend), and technical writing. In the still moments, you’ll find me sketching out feelings,
-              writing pieces of my mind into journals, or immersing myself in the comfort of stories—through pop
-              culture, fan works, or quiet reflection.
+              consume, but we also create to make meaning, to leave traces of ourselves behind. <br /><br />In my work,
+              I try to find balance between creativity and structure, letting logic ground me while imagination keeps me
+              curious. Lately, I’ve been navigating the paths of project management, full-stack development (with a deep
+              pull toward the frontend), and technical writing. In the still moments, you’ll find me sketching out
+              feelings, writing pieces of my mind into journals, or immersing myself in the comfort of stories—through
+              pop culture, fan works, or quiet reflection.
             </p>
           </div>
 
@@ -1169,7 +1181,7 @@
             <!-- projects wrapper -->
             <div
               id="projectswrapperid"
-              class="flex flex-wrap gap-3 justify-center p-4 max-w-7xl mx-auto hide-scrollbar overflow-y-auto"
+              class="flex flex-wrap gap-3 p-4 max-w-7xl mx-auto hide-scrollbar overflow-y-auto"
             >
               <!-- project boilerplates here, wrapped in a href tag -->
             </div>
@@ -1316,5 +1328,11 @@
 
     <!-- dynamic flip -->
     <script type="module" src="./flipIdCard.js"></script>
+
+    <!-- go to top -->
+    <script type="module" src="./goToTop.js"></script>
+
+    <!-- Locomotive Scroll JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
   </body>
 </html>
