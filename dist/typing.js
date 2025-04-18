@@ -3,15 +3,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const element = document.getElementById("typewriter");
   const phrases = [
-    "tripi tropi ",
-    "tung tung tung tung sahur ",
-    "tralalero tralala ",
-    "bombardini crocodili ",
-    "potini vedridini ",
-    "boom shakalaka ",
-    "can we pretend that airplanes in the nightsky are like shooting stars ",
-    "hur hur hur hur hur ",
-    "omsim barabida omsim barabida",
+    "One look, give 'em whiplash ",
+    "Beat drop with a big flash ",
+    "집중해 좀 더 think fast ",
+    "이유 넌 이해 못 해 uh ",
+    "왜 이제야 know I did that, uh ",
+    "Day one, know I been bad, uh ",
+    "Don't stop 흔들린 채 ",
+    "무리해도 can't touch that (can't touch that) ",
   ];
 
   let currentPhrase = 0;

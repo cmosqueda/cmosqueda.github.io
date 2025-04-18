@@ -79,12 +79,34 @@
     </button>
 
     <section class="relative overflow-hidden">
-      <img class="object-cover h-[600px] w-full" src="./assets/giphy.gif" alt="giffy" />
+      <div
+        class="bg-[url('./assets/aespa_whiplash_1.gif')] bg-cover bg-center bg-fixed h-screen flex items-center justify-center transition-all"
+      ></div>
+
+      <!-- KARINA UP SOLO MV -->
+      <!-- <iframe
+        class="w-screen h-screen"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/K7qryogPQes?si=6RvrkSLzQBqeXVBg&amp;start=30"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe> -->
+
       <!-- Dynamic Typing Text -->
-      <p
-        id="typewriter"
-        class="text-6xl font-bold text-neutral-50 absolute bottom-32 left-10 after:content-['|'] after:ml-1 after:animate-pulse"
-      ></p>
+      <div class="absolute top-0 w-full h-full bg-black/50 text-neutral-50">
+        <p
+          id="typewriter"
+          class="text-5xl font-bold absolute bottom-60 left-10 after:content-['|'] after:ml-1 after:animate-pulse"
+        ></p>
+        <p class="absolute bottom-10 ml-5 right-5 text-xs">
+          &COPY; 2025 Tyne. All rights reserved. Portions of content inspired by or include work by
+          <a href="https://www.aespa.com/" target="_blank" rel="noopener noreferrer" class="underline">aespa</a>.
+        </p>
+      </div>
 
       <!-- socials -->
       <header
@@ -162,7 +184,7 @@
     <!-- id -->
     <section>
       <div class="flex flex-col w-full items-center my-10">
-        <p class="text-3xl font-bold text-neutral-100 mb-10">TYNE'S ID</p>
+        <p class="text-3xl font-bold text-neutral-100 mb-10">TYNE'S ID CARD</p>
 
         <!-- flip container -->
         <div id="flip-card" class="cursor-pointer perspective md:w-3/6 w-5/6 transition-all">
@@ -1182,7 +1204,7 @@
             <!-- projects wrapper -->
             <div
               id="projectswrapperid"
-              class="flex flex-wrap gap-3 p-4 max-w-7xl mx-auto hide-scrollbar overflow-y-auto"
+              class="flex flex-wrap gap-2 my-4 max-w-7xl mx-auto hide-scrollbar overflow-y-auto"
             >
               <!-- project boilerplates here, wrapped in a href tag -->
             </div>
