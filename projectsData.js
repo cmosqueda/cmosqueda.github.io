@@ -95,7 +95,7 @@ function renderProjects() {
     const projectLink = document.createElement("a");
     projectLink.href = project.link;
     projectLink.className =
-      "text-neutral-50 flex flex-col flex-grow items-center text-center border rounded-lg p-4 bg-neutral-900 hover:bg-neutral-200 hover:text-neutral-900 hover:shadow-xl transition-all w-auto sm:w-[260px] h-auto justify-center";
+      "text-neutral-50 flex flex-row sm:flex-col flex-grow items-center sm:text-center text-start border rounded-lg p-5 bg-neutral-900 hover:bg-neutral-200 hover:text-neutral-900 hover:shadow-xl transition-all w-auto sm:w-[260px] h-auto  ";
     projectLink.target = "_blank"; // Open in new tab
     projectLink.classList.add("cursor-pointer");
 
@@ -103,11 +103,11 @@ function renderProjects() {
     const img = document.createElement("img");
     img.src = project.logoSrc;
     img.alt = project.projectName;
-    img.className = "object-cover w-20 h-20 rounded-md transition-all";
+    img.className = "object-cover w-14 h-14 sm:w-20 sm:h-20 rounded-md transition-all";
 
     // Create details container
     const detailsDiv = document.createElement("div");
-    detailsDiv.className = "ml-3 mt-3";
+    detailsDiv.className = "ml-4 sm:ml-0 sm:mt-3 mt-0";
 
     // Project title
     const title = document.createElement("p");
@@ -116,7 +116,7 @@ function renderProjects() {
 
     // Project description
     const description = document.createElement("p");
-    description.className = "text-xs  hidden sm:block";
+    description.className = "text-xs hidden sm:block";
     description.textContent = project.description;
 
     // Append elements
