@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Auto-collapse after 5 seconds
     autoCollapseTimer = setTimeout(() => {
       collapseResume();
-    }, 5000);
+    }, 4000);
   }
 
   function collapseResume() {
