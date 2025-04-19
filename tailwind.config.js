@@ -10,6 +10,9 @@ module.exports = {
         roboto: ["Roboto", "arial", "sans-serif"],
         robotoMono: ["Roboto Mono", "arial", "sans-serif"],
       },
+      rotate: {
+        180: "180deg",
+      },
     },
   },
   plugins: [],

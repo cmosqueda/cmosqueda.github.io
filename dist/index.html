@@ -20,6 +20,9 @@
 
     <!-- FOR CUSTOM STYLES, CONTAINS TYPING AND FLIP CARD ANIMATION -->
     <link rel="stylesheet" href="customStyle.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
 
   <body class="font-robotoMono bg-neutral-800">
@@ -45,13 +48,15 @@
       id="resumeBtn"
       href="./assets/MosquedaChristine_CV_Resume.pdf"
       target="_blank"
-      class="fixed bottom-5 left-0 z-20 bg-neutral-100 border border-neutral-900 shadow-lg text-neutral-900 px-2 py-2 rounded-r-md text-sm transition-all duration-300 flex items-center group opacity-0 pointer-events-none"
+      class="fixed bottom-5 left-0 z-20 bg-neutral-100 border border-neutral-900 shadow-lg text-neutral-900 px-2 py-2 rounded-r-md text-xs transition-all duration-300 flex items-center overflow-hidden group opacity-0 pointer-events-none max-w-[40px]"
     >
-      <span class="transition-all duration-300 group-hover:translate-x-1">→</span>
+      <span id="resumeIcon" class="transition-transform duration-500 text-base"> → </span>
       <span
-        class="ml-2 overflow-hidden whitespace-nowrap max-w-0 group-hover:max-w-xs transition-all duration-300 ease-in-out"
-        >View Resume</span
+        id="resumeText"
+        class="ml-2 whitespace-nowrap flex items-center gap-1 opacity-0 max-w-0 transition-all duration-500"
       >
+        <i class="fas fa-file-alt"></i> View Resume
+      </span>
     </a>
 
     <!-- BANNER SECTION W HEADER -->
