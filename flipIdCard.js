@@ -4,16 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const backText = document.getElementById("back-text");
 
   const phrases = [
-    "The stars whispered your name tonight.",
-    "You're the calm in chaos.",
-    "Magic is just reality in disguise.",
-    "Curiosity is your superpower.",
-    "You see what others miss.",
-    "Grayscale is your color of wisdom.",
-    "You radiate stillness and strength.",
-    "Reality bends for those who observe.",
-    "You belong in the in-between.",
-    "The quietest minds speak the loudest truths.",
+    "Tralalero tralala",
+    "Bombardini crocodili",
+    "Tripi tropi",
+    "Tung tung tung tung sahur",
+    "What haffen vella",
+    "Super idol de xiaorong",
+    "I-step by the step, sakses ka eh, bigla kang sumakses eh",
+    "Makikita mo sa imagine mo na bigla kang sumakses",
+    "Ballerina cappuccina",
+    "Baby mama t-rex",
+    "Don coccodrillo",
   ];
 
   if (flipCard && flipInner && backText) {
